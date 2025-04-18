@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aashu FR - All Websites</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 15px 0;
+    }
+
+    a {
+      background-color: #ffffff;
+      color: #2c5364;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Music animation styles */
+    .music-animation {
+      animation: pulse 2s infinite ease-in-out;
+      font-size: 60px;
+      margin: 30px;
+      color: #ffcc00;
+    }
+
+    /* Pulse Animation for music icon */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+        color: #ff9900;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Music player button */
+    .music-player {
+      background-color: #ffffff;
+      color: #2c5364;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .music-player:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>मेरी वेबसाइट ASHU FF  पर आपका स्वागत है</h1>
+    <h2>सभी जरूरी साइट्स एक ही जगह</h2>
+
+    <!-- Music Animation Icon -->
+    <div class="music-animation"></div>
+
+    <!-- Music Player -->
+    <button class="music-player" onclick="playMusic()">Play Music</button>
+    <audio id="myAudio">
+      <source src="your-music-file.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <ul>
+      <li><a href="https://www.google.com" target="_blank">Google</a></li>
+      <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://www.flipkart.com" target="_blank">Flipkart</a></li>
+      <li><a href="https://www.amazon.in" target="_blank">Amazon</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.dts.freefiremax" target="_blank">Free Fire Max Download</a></li>
+      <li><a href="https://rtps.bihar.gov.in" target="_blank">RTPS Bihar</a></li>
+      <li><a href="https://www.remove.bg" target="_blank">Photo Background Remove</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.miniclip.carrom" target="_blank">Carrom Pool (Offline Game)</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf" target="_blank">Subway Surfers</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.fingersoft.hillclimb" target="_blank">Hill Climb Racing</a></li>
+      <li><a href="https://www.battlegroundsmobileindia.com" target="_blank">PUBG (BGMI)</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function playMusic() {
+      var music = document.getElementById("myAudio");
+      music.play();
+    }
+  </script>
+</body>
+</html>
